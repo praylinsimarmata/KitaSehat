@@ -50,7 +50,7 @@
                 <ul class="menuNavigasi navbar-nav me-auto mb-2 mb-lg-0">
                   <!-- beranda -->
                   <li class="nav-item">
-                    <a class="nav-link" href="index.html">Beranda</a>
+                    <a class="nav-link" href="index.html#beranda">Beranda</a>
                   </li>
                   <!-- tentang -->
                   <li class="nav-item">
@@ -62,7 +62,14 @@
                   </li>
                   <!-- profil -->
                   <li class="nav-item">
-                    <a class="nav-link" href="profil.html">Profil</a>
+                    <a
+                      class="nav-link pointer-event"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                      style="cursor: pointer"
+                    >
+                      Profil
+                    </a>
                   </li>
                   <!-- trivia -->
                   <li class="nav-item">
@@ -76,6 +83,54 @@
                   </a>
                 </div>
               </div>
+
+              <!-- modal profile -->
+              <div
+                class="modal fade"
+                id="staticBackdrop"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog bg-white p-3 modal-lg">
+                  <div class="modal-content box_modal_profile">
+                    <div class="modal-header d-flex justify-content-center">
+                      <h3 class="text-center blue fw-bold">DATA DIRI</h3>
+                    </div>
+                    <div class="modal-body">
+                      <div class="d-flex mt-3">
+                        <div class="pasfoto_profile">
+                          <img src="img/image 32.png" alt="" />
+                        </div>
+                        <div class="input_biodata ms-4 w-100">
+                          <form action="">
+                            <label for="name">Nama</label>
+                            <input type="text" class="w-100 input-group" />
+                            <label for="age">Usia</label>
+                            <input type="number" class="w-100 input-group" />
+                            <label for="job">Pekerjaan</label>
+                            <input type="text" class="w-100 input-group" />
+                            <label for="weight">Berat Badan</label>
+                            <input type="number" class="w-100 input-group" />
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn_red"
+                        data-bs-dismiss="modal"
+                      >
+                        Keluar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end modal profile -->
             </div>
           </nav>
         </div>
