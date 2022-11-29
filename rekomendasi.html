@@ -23,6 +23,10 @@
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;1,800&display=swap");
+    </style>
   </head>
   <body>
     <header>
@@ -139,182 +143,218 @@
     </header>
     <main>
       <div class="container">
-        <div class="sarapan" style="margin-top: 120px !important">
-          <h2 class="ff_p">Sarapan</h2>
-          <div class="sarapan_img mt_30">
-            <div class="lg-size">
-              <div class="row g-2">
-                <div class="col-lg-3 col-md-6 col-6">
-                  <div class="d-flex center">
-                    <img
-                      class="bg_abu br_20 p-3 w-75"
-                      src="img/makanSehat/sarapan/image 17.png"
-                      alt=""
-                    />
+        <section>
+          <!-- populer -->
+          <div class="populer">
+            <h2 class="ff_p">Populer</h2>
+            <div class="populer_img mt_30">
+              <div class="lg-size">
+                <div class="row gx-2">
+                  <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="d-flex center">
+                      <img
+                        class="bg_abu br_20 p-2 w-75"
+                        src="img/makanSehat/populer/tumis.png"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-center mt-2 fs_14">Tumis</p>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="d-flex center">
+                      <img
+                        class="bg_abu br_20 p-2 w-75"
+                        src="img/makanSehat/populer/roti.png"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-center mt-2 fs_14">French Toast</p>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="d-flex center">
+                      <img
+                        class="bg_abu br_20 p-2 w-75"
+                        src="img/makanSehat/populer/sereal.png"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-center mt-2 fs_14">Sereal</p>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="d-flex center">
+                      <img
+                        class="bg_abu br_20 p-2 w-75"
+                        src="img/makanSehat/populer/sarapan.png"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-center mt-2 fs_14">Kopi</p>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="d-flex center">
+                      <img
+                        class="bg_abu br_20 p-2 w-75"
+                        src="img/makanSehat/populer/kebab.png"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-center mt-2 fs_14">Kebab</p>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="d-flex center">
+                      <img
+                        class="bg_abu br_20 p-2 w-75"
+                        src="img/makanSehat/populer/sayur_bayam.png"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-center mt-2 fs_14">Sayur Bayam</p>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="d-flex center">
+                      <img
+                        class="bg_abu br_20 p-2 w-75"
+                        src="img/makanSehat/populer/nasi_tahu.png"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-center mt-2 fs_14">Nasi Tahu</p>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="d-flex center">
+                      <img
+                        class="bg_abu br_20 p-2 w-75"
+                        src="img/makanSehat/populer/makanan_apaansi.png"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-center mt-2 fs_14">Nasi Rica</p>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="d-flex center">
+                      <img
+                        class="bg_abu br_20 p-2 w-75"
+                        src="img/makanSehat/populer/sosis.png"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-center mt-2 fs_14">Sosis Setan</p>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="d-flex center">
+                      <img
+                        class="bg_abu br_20 p-2 w-75"
+                        src="img/makanSehat/populer/sayuran.png"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-center mt-2 fs_14">Sayuran</p>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-6">
-                  <div class="d-flex center">
-                    <img
-                      class="bg_abu br_20 p-3 w-75"
-                      src="img/makanSehat/sarapan/image 18.png"
-                      alt=""
-                    />
+              </div>
+              <div class="sm-size">
+                <!-- Flickity HTML init -->
+                <div class="carousel js-flickity">
+                  <!-- images from unsplash.com -->
+                  <div class="carousel-cell">
+                    <div class="d-flex">
+                      <img
+                        class="bg_abu br_20 p-3 w-75"
+                        src="img/makanSehat/sarapan/image 17.png"
+                        alt=""
+                      />
+                    </div>
                   </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-6 mt-md-3 mt-sm-4 gambar">
-                  <div class="d-flex center">
-                    <img
-                      class="bg_abu br_20 p-3 w-75"
-                      src="img/makanSehat/sarapan/image 20.png"
-                      alt=""
-                    />
+                  <div class="carousel-cell">
+                    <div class="d-flex">
+                      <img
+                        class="bg_abu br_20 p-3 w-75"
+                        src="img/makanSehat/sarapan/image 18.png"
+                        alt=""
+                      />
+                    </div>
                   </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-6 mt-md-3 mt-sm-4 gambar">
-                  <div class="d-flex center">
-                    <img
-                      class="bg_abu br_20 p-3 w-75"
-                      src="img/makanSehat/sarapan/image 21.png"
-                      alt=""
-                    />
+                  <div class="carousel-cell">
+                    <div class="d-flex center">
+                      <img
+                        class="bg_abu br_20 p-3 w-75"
+                        src="img/makanSehat/sarapan/image 20.png"
+                        alt=""
+                      />
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="sm-size">
-              <!-- Flickity HTML init -->
-              <div class="carousel js-flickity">
-                <!-- images from unsplash.com -->
-                <div class="carousel-cell">
-                  <div class="d-flex">
-                    <img
-                      class="bg_abu br_20 p-3 w-75"
-                      src="img/makanSehat/sarapan/image 17.png"
-                      alt=""
-                    />
+                  <div class="carousel-cell">
+                    <div class="d-flex center">
+                      <img
+                        class="bg_abu br_20 p-3 w-75"
+                        src="img/makanSehat/sarapan/image 21.png"
+                        alt=""
+                      />
+                    </div>
                   </div>
-                </div>
-                <div class="carousel-cell">
-                  <div class="d-flex">
-                    <img
-                      class="bg_abu br_20 p-3 w-75"
-                      src="img/makanSehat/sarapan/image 18.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div class="carousel-cell">
-                  <div class="d-flex center">
-                    <img
-                      class="bg_abu br_20 p-3 w-75"
-                      src="img/makanSehat/sarapan/image 20.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div class="carousel-cell">
-                  <div class="d-flex center">
-                    <img
-                      class="bg_abu br_20 p-3 w-75"
-                      src="img/makanSehat/sarapan/image 21.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="makan_siang mt_50">
-          <h2 class="ff_p">Makan Siang</h2>
-          <div class="makan_siang_img mt_30">
-            <div class="row g-2">
-              <div class="col-lg-3 col-md-6 col-6">
-                <div class="d-flex center">
-                  <img
-                    class="bg_abu br_20 p-3 w-75"
-                    src="img/makanSehat/sarapan/image 17.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-6">
-                <div class="d-flex center">
-                  <img
-                    class="bg_abu br_20 p-3 w-75"
-                    src="img/makanSehat/sarapan/image 18.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 col-6 mt-md-3 mt-sm-4 gambar">
-                <div class="d-flex center">
-                  <img
-                    class="bg_abu br_20 p-3 w-75"
-                    src="img/makanSehat/sarapan/image 20.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-6 mt-md-3 mt-sm-4 gambar">
-                <div class="d-flex center">
-                  <img
-                    class="bg_abu br_20 p-3 w-75"
-                    src="img/makanSehat/sarapan/image 21.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="makan_malam mt_50">
-          <h2 class="ff_p">Makan Malam</h2>
-          <div class="makan_malam_img mt_30">
-            <div class="row g-2">
-              <div class="col-lg-3 col-md-6 col-6">
-                <div class="d-flex center">
-                  <img
-                    class="bg_abu br_20 p-3 w-75"
-                    src="img/makanSehat/sarapan/image 17.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-6">
-                <div class="d-flex center">
-                  <img
-                    class="bg_abu br_20 p-3 w-75"
-                    src="img/makanSehat/sarapan/image 18.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 col-6 mt-md-3 mt-sm-4 gambar">
-                <div class="d-flex center">
-                  <img
-                    class="bg_abu br_20 p-3 w-75"
-                    src="img/makanSehat/sarapan/image 20.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-6 mt-md-3 mt-sm-4 gambar">
-                <div class="d-flex center">
-                  <img
-                    class="bg_abu br_20 p-3 w-75"
-                    src="img/makanSehat/sarapan/image 21.png"
-                    alt=""
-                  />
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+        <!-- end populer -->
+        <section>
+          <!-- Pilih Kebutuhan Anda -->
+          <div class="pilih_kebutuhan">
+            <h2 class="ff_p">Pilih Kebutuhan Anda</h2>
+            <div class="d-flex justify-content-center" style="margin-top: 5rem">
+              <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="d-flex center p-2">
+                    <img class="w-100" src="img/Kebutuhan/vegan.png" alt="" />
+                  </div>
+                  <p class="text-center mt-2 fs_14">Vegetarian</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="d-flex center">
+                    <img
+                      class="w-100 h-100"
+                      src="img/Kebutuhan/time management.png"
+                      alt=""
+                    />
+                  </div>
+                  <p class="text-center mt-2 fs_14">Diabetes</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="d-flex align-content-center">
+                    <img
+                      class="w-100 h-100"
+                      src="img/Kebutuhan/presentation.png"
+                      alt=""
+                    />
+                  </div>
+                  <p class="text-center mt-2 fs_14">Obesitas</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="d-flex center">
+                    <img
+                      class="w-100 h-100"
+                      src="img/Kebutuhan/baby_eating.png"
+                      alt=""
+                    />
+                  </div>
+                  <p class="text-center mt-2 fs_14">Anak dan Balita</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="d-flex align-content-center">
+                    <img
+                      class="w-100 h-100"
+                      src="img/Kebutuhan/mom.png"
+                      alt=""
+                    />
+                  </div>
+                  <p class="text-center mt-2 fs_14">Ibu Menyusui</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Pilih Kebutuhan Anda -->
+        </section>
       </div>
     </main>
 
