@@ -22,8 +22,11 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
     <!-- Dropify -->
-    <link rel="stylesheet" href="dropify/dist/css/dropify.css" />
-    <script src="dropify/dist/js/dropify.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="node_modules/dropify/dist/css/dropify.css" />
+    <script
+      src="node_modules/dropify/dist/js/dropify.js"
+      type="text/javascript"
+    ></script>
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/script.js"></script>
@@ -42,12 +45,12 @@
         <div class="nav_navbarmenu">
           <nav class="navbar py-3 container navbar-expand-lg">
             <div class="container-fluid">
-              <div class="logo">
+              <div class="logo navbar-brand">
                 <img src="img/logo.png" alt="" />
               </div>
 
               <button
-                class="navbar-toggler"
+                class="navbar-toggler border-none"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent"
@@ -55,17 +58,19 @@
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <i class="bi bi-list"></i>
+                <i class="bi bi-grid-fill"></i>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="menuNavigasi navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="menuNavigasi me-auto navbar-nav mb-2 mb-lg-0">
                   <!-- beranda -->
                   <li class="nav-item">
                     <a class="nav-link" href="index.html#beranda">Beranda</a>
                   </li>
                   <!-- rekomendasi -->
                   <li class="nav-item">
-                    <a class="nav-link" href="index.html#rekomendasi">Rekomendasi</a>
+                    <a class="nav-link" href="index.html#rekomendasi"
+                      >Rekomendasi</a
+                    >
                   </li>
                   <!-- tentang -->
                   <li class="nav-item">
@@ -73,15 +78,11 @@
                   </li>
                   <!-- developer -->
                   <li class="nav-item">
-                    <a class="nav-link" href="index.html#developer">Developer</a>
+                    <a class="nav-link" href="index.html#developer"
+                      >Developer</a
+                    >
                   </li>
                 </ul>
-
-                <div class="d-flex">
-                  <a href="login/login.html">
-                    <button class="btn_red">Keluar</button>
-                  </a>
-                </div>
               </div>
 
               <!-- modal profile -->
@@ -141,9 +142,11 @@
     <main>
       <!-- HITUNG KALORI-->
       <section>
-        <div class="bg_home" id="beranda">
+        <div class="bg_home pb-3" id="beranda">
           <div class="d-flex justify-content-center">
-            <h2 class="header_hitungKalori ps-2">Hitung <span class="text-dark">Kalori</span></h2>
+            <h2 class="header_hitungKalori ps-2">
+              Hitung <span class="text-dark">Kalori</span>
+            </h2>
           </div>
           <p class="text-center">
             Lorem ipsum dolor sit amet consectetur. Sagittis amet vulputate
@@ -156,11 +159,51 @@
             <form action="">
               <input type="file" class="dropify" data-height="300" />
               <div class="mt_20 w-100">
-                <button type="submit mt_40 w-100" class="btn_blue">
+                <button
+                  type="submit mt_40 w-100"
+                  class="btn_blue"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
                   Hitung Kalori
                 </button>
               </div>
             </form>
+            <!-- RESULT -->
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Hasil Hitung Kalori
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">...</div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-bs-dismiss="modal"
+                    >
+                      Keluar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- end dropify -->
         </div>
@@ -193,9 +236,9 @@
           ></div>
         </div>
       </div> -->
-      
+
       <div class="container">
-        <hr>
+        <hr />
       </div>
 
       <!-- REKOMENDASI -->
@@ -207,17 +250,17 @@
             </div>
             <p class="text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              necessitatibus est magni nihil at dicta dolore perferendis vitae eum
-              sint.
+              necessitatibus est magni nihil at dicta dolore perferendis vitae
+              eum sint.
             </p>
             <!-- POPULER -->
             <section>
-              <div class="populer ">
-                <h3 class="mt_20 ">Populer</h3>
+              <div class="populer">
+                <h3 class="mt_20">Populer</h3>
                 <div class="populer_img mt_30">
-                  <div class="lg-size">
+                  <div class="">
                     <div class="row g-3 gx-2">
-                      <div class="box_populer col-lg-2 box, col-md-4 col-sm-6">
+                      <div class="box_populer col-lg-2 col-md-4 col-sm-6 col-6">
                         <div class="d-flex justify-content-center">
                           <img
                             class="w-100"
@@ -227,17 +270,17 @@
                         </div>
                         <p class="mt-2 fs_14">Tumis</p>
                       </div>
-                      <div class="box_populer col-lg-2 col-md-4 col-sm-6">
+                      <div class="box_populer col-lg-2 col-md-4 col-sm-6 col-6">
                         <div class="d-flex justify-content-center">
                           <img
-                            class=" w-100"
+                            class="w-100"
                             src="img/makanSehat/populer/roti.png"
                             alt=""
                           />
                         </div>
                         <p class="mt-2 fs_14">French Toast</p>
                       </div>
-                      <div class="box_populer col-lg-2 col-md-4 col-sm-6">
+                      <div class="box_populer col-lg-2 col-md-4 col-sm-6 col-6">
                         <div class="d-flex justify-content-center">
                           <img
                             class="w-100"
@@ -245,29 +288,29 @@
                             alt=""
                           />
                         </div>
-                        <p class=" mt-2 fs_14">Sereal</p>
+                        <p class="mt-2 fs_14">Sereal</p>
                       </div>
-                      <div class="box_populer col-lg-2 col-md-4 col-sm-6">
+                      <div class="box_populer col-lg-2 col-md-4 col-sm-6 col-6">
                         <div class="d-flex justify-content-center">
                           <img
-                            class=" w-100"
+                            class="w-100"
                             src="img/makanSehat/populer/sarapan.png"
                             alt=""
                           />
                         </div>
                         <p class="mt-2 fs_14">Kopi</p>
                       </div>
-                      <div class="box_populer col-lg-2 col-md-4 col-sm-6">
+                      <div class="box_populer col-lg-2 col-md-4 col-sm-6 col-6">
                         <div class="d-flex justify-content-center">
                           <img
-                            class=" w-100"
+                            class="w-100"
                             src="img/makanSehat/populer/kebab.png"
                             alt=""
                           />
                         </div>
-                        <p class=" mt-2 fs_14">Kebab</p>
+                        <p class="mt-2 fs_14">Kebab</p>
                       </div>
-                      <div class="box_populer col-lg-2 col-md-4 col-sm-6">
+                      <div class="box_populer col-lg-2 col-md-4 col-sm-6 col-6">
                         <div class="d-flex justify-content-center">
                           <img
                             class="w-100"
@@ -275,9 +318,9 @@
                             alt=""
                           />
                         </div>
-                        <p class=" mt-2 fs_14">Sayur Bayam</p>
+                        <p class="mt-2 fs_14">Sayur Bayam</p>
                       </div>
-                      <div class="box_populer col-lg-2 col-md-4 col-sm-6">
+                      <div class="box_populer col-lg-2 col-md-4 col-sm-6 col-6">
                         <div class="d-flex justify-content-center">
                           <img
                             class="w-100"
@@ -285,9 +328,9 @@
                             alt=""
                           />
                         </div>
-                        <p class=" mt-2 fs_14">Nasi Tahu</p>
+                        <p class="mt-2 fs_14">Nasi Tahu</p>
                       </div>
-                      <div class="box_populer col-lg-2 col-md-4 col-sm-6">
+                      <div class="box_populer col-lg-2 col-md-4 col-sm-6 col-6">
                         <div class="d-flex justify-content-center">
                           <img
                             class="w-100"
@@ -295,19 +338,19 @@
                             alt=""
                           />
                         </div>
-                        <p class=" mt-2 fs_14">Nasi Rica</p>
+                        <p class="mt-2 fs_14">Nasi Rica</p>
                       </div>
-                      <div class="box_populer col-lg-2 col-md-4 col-sm-6">
+                      <div class="box_populer col-lg-2 col-md-4 col-sm-6 col-6">
                         <div class="d-flex justify-content-center">
                           <img
-                            class=" w-100"
+                            class="w-100"
                             src="img/makanSehat/populer/sosis.png"
                             alt=""
                           />
                         </div>
-                        <p class=" mt-2 fs_14">Sosis Setan</p>
+                        <p class="mt-2 fs_14">Sosis Setan</p>
                       </div>
-                      <div class="box_populer col-lg-2 col-md-4 col-sm-6">
+                      <div class="box_populer col-lg-2 col-md-4 col-sm-6 col-6">
                         <div class="d-flex justify-content-center">
                           <img
                             class="w-100"
@@ -315,49 +358,7 @@
                             alt=""
                           />
                         </div>
-                        <p class=" mt-2 fs_14">Sayuran</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="sm-size">
-                    <!-- Flickity HTML init -->
-                    <div class="carousel js-flickity">
-                      <!-- images from unsplash.com -->
-                      <div class="carousel-cell">
-                        <div class="d-flex">
-                          <img
-                            class="bg_abu   p-3 w-75"
-                            src="img/makanSehat/sarapan/image 17.png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                      <div class="carousel-cell">
-                        <div class="d-flex">
-                          <img
-                            class="bg_abu   p-3 w-75"
-                            src="img/makanSehat/sarapan/image 18.png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                      <div class="carousel-cell">
-                        <div class="d-flex center">
-                          <img
-                            class="bg_abu   p-3 w-75"
-                            src="img/makanSehat/sarapan/image 20.png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                      <div class="carousel-cell">
-                        <div class="d-flex center">
-                          <img
-                            class="bg_abu   p-3 w-75"
-                            src="img/makanSehat/sarapan/image 21.png"
-                            alt=""
-                          />
-                        </div>
+                        <p class="mt-2 fs_14">Sayuran</p>
                       </div>
                     </div>
                   </div>
@@ -368,8 +369,8 @@
           <!-- PILIH KEBUTUHAN -->
           <section>
             <div class="pilih_kebutuhan">
-              <h3 class="mt_20">Pilih Kebutuhan Anda</h2>
-              <div class="d-flex justify-content-center mt_40" >
+              <h3 class="mt_20">Pilih Kebutuhan Anda</h3>
+              <div class="d-flex justify-content-center mt_40">
                 <div class="d-flex">
                   <div class="box_kebutuhan">
                     <div class="d-flex center p-2">
@@ -425,9 +426,9 @@
         </div>
       </section>
       <!-- END REKOMENDASI -->
-      
+
       <div class="container">
-        <hr>
+        <hr />
       </div>
 
       <!-- TENTANG -->
@@ -440,55 +441,43 @@
           </div>
           <div class="container">
             <p class="text-center">
-              Aplikasi ini merupakan aplikasi yang akan membantu orang untuk hidup
-              lebih sehat. Aplikasi ini dibuat karena menyadari betapa pentingnya
-              nutrisi bagi orang-orang, terutama bagi kaum muda yang masih dalam
-              tahap pertumbuhan. Selain itu, juga menyadari bahwa banyak orang
-              masih membeli makanan cepat saji untuk dikonsumsi sebagai makanan
-              sehari-hari. Nutrisi yang didapatkan tentu tidak cukup dengan apa
-              yang seharusnya. Oleh karena itu, banyak orang yang mudah lelah saat
-              melakukan aktivitas. Dalam hal ini, kami menemukan ide tentang
-              aplikasi yang akan membantu seseorang untuk hidup lebih sehat dengan
-              memantau kebutuhan kalori dan menentukan makanan sehat yang ingin
-              dimakan.
+              Aplikasi ini merupakan aplikasi yang akan membantu orang untuk
+              hidup lebih sehat. Aplikasi ini dibuat karena menyadari betapa
+              pentingnya nutrisi bagi orang-orang, terutama bagi kaum muda yang
+              masih dalam tahap pertumbuhan. Selain itu, juga menyadari bahwa
+              banyak orang masih membeli makanan cepat saji untuk dikonsumsi
+              sebagai makanan sehari-hari. Nutrisi yang didapatkan tentu tidak
+              cukup dengan apa yang seharusnya. Oleh karena itu, banyak orang
+              yang mudah lelah saat melakukan aktivitas. Dalam hal ini, kami
+              menemukan ide tentang aplikasi yang akan membantu seseorang untuk
+              hidup lebih sehat dengan memantau kebutuhan kalori dan menentukan
+              makanan sehat yang ingin dimakan.
             </p>
           </div>
           <div class="tentang_img mt_50">
             <div class="row">
               <div class="col-lg-3 col-md-6 col-6 mt-md-3 mt-sm-4">
                 <div class="d-flex p-2 center box_tentang">
-                  <img
-                    class=" w-100"
-                    src="img/tentang/makanSehat.png"
-                    alt=""
-                  />
+                  <img class="w-100" src="img/tentang/makanSehat.png" alt="" />
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 col-6 mt-md-3 mt-sm-4 ">
+              <div class="col-lg-3 col-md-6 col-6 mt-md-3 mt-sm-4">
                 <div class="d-flex p-2 center box_tentang">
+                  <img class="w-100" src="img/tentang/olahRaga.png" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-6 mt-md-3 mt-sm-4">
+                <div class="d-flex center p-2 box_tentang">
                   <img
-                    class="  w-100"
-                    src="img/tentang/olahRaga.png"
+                    class="w-100"
+                    src="img/tentang/periksaKesehatan.png"
                     alt=""
                   />
                 </div>
               </div>
               <div class="col-lg-3 col-md-6 col-6 mt-md-3 mt-sm-4">
                 <div class="d-flex center p-2 box_tentang">
-                  <img
-                    class="  w-100"
-                    src="img/tentang/periksaKesehatan.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-6 mt-md-3 mt-sm-4 ">
-                <div class="d-flex center p-2 box_tentang">
-                  <img
-                    class=" w-100"
-                    src="img/tentang/tidurCukup.png"
-                    alt=""
-                  />
+                  <img class="w-100" src="img/tentang/tidurCukup.png" alt="" />
                 </div>
               </div>
             </div>
@@ -498,7 +487,7 @@
       <!-- END TENTANG -->
 
       <div class="container">
-        <hr>
+        <hr />
       </div>
 
       <!-- DEVELOPER -->
@@ -518,7 +507,7 @@
         </div>
         <div class="container mt-5">
           <div class="row g-5">
-            <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
               <div class="p-2 box_tim_develop">
                 <img
                   src="img/tim developer/tim1.png"
@@ -530,7 +519,7 @@
                 <p>Web Developer</p>
               </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
               <div class="p-2 box_tim_develop">
                 <img
                   src="img/tim developer/tim1.png"
@@ -542,7 +531,7 @@
                 <p>Web Developer</p>
               </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
               <div class="p-2 box_tim_develop">
                 <img
                   src="img/tim developer/tim1.png"
@@ -554,7 +543,7 @@
                 <p>Web Developer</p>
               </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
               <div class="p-2 box_tim_develop">
                 <img
                   src="img/tim developer/tim1.png"
@@ -573,71 +562,27 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="mt_100">
-      <div class="bg_black" style="padding: 60px 0">
-        <div class="container">
-          <div class="row">
-            <!-- SIDE LEFT -->
-            <div class="col-lg-6 col-md-6 col-sm-12">
-              <div class="d-flex h-100 align-items-center">
-                <div class="">
-                  <img src="img/logo_footer.png" alt="" />
-                  <div class="d-flex mt_20 socmed">
-                    <a href="">
-                      <img class="me-4" src="img/sosmed/mail.png" alt="" />
-                    </a>
-                    <a href="">
-                      <img class="me-4" src="img/sosmed/ig.png" alt="" />
-                    </a>
-                    <a href="">
-                      <img class="me-4" src="img/sosmed/tw.png" alt="" />
-                    </a>
-                    <a href="">
-                      <img class="me-4" src="img/sosmed/fb.png" alt="" />
-                    </a>
-                    <a href="">
-                      <img class="me-4" src="img/sosmed/call.png" alt="" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- SIDE RIGHT -->
-            <div class="col-lg-6 col-md-6 col-sm-12">
-              <div class="d-flex navigasi_footer justify-content-end">
-                <div class="text-end md_text_style_start">
-                  <h4 class="text-white fw-bold">Navigasi</h4>
-                  <ul class="mt_10">
-                    <li>
-                      <a href="index.html">Beranda</a>
-                    </li>
-                    <li>
-                      <a href="index.html#tentang">Tentang</a>
-                    </li>
-                    <li>
-                      <a href="rekomendasi.html">Rekomendasi</a>
-                    </li>
-                    <li>
-                      <a href="profil.html">Profil</a>
-                    </li>
-                    <li>
-                      <a href="trivia.html">Trivia</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <footer class="">
+      <div class="py-3">
+        <p class="text-center fw_700">KitaSehat+© 2022 Copyright</p>
       </div>
     </footer>
     <!-- END FOOTER -->
+    <!--======= SCROLL UP =======-->
+    <a href="#" class="scrollup" id="scroll-up"
+      ><i class="bi bi-arrow-up-circle-fill blue"></i
+    ></a>
 
     <!-- SCRIPT -->
     <script src="assets/script.js"></script>
+    <!--======= SCROLL REVEAL =======-->
+    <script src="assets/scrollreveal.min.js"></script>
 
     <!-- SCRIPT DROPIFY -->
-    <script src="dropify/dist/js/dropify.js" type="text/javascript"></script>
+    <script
+      src="node_modules/dropify/dist/js/dropify.js"
+      type="text/javascript"
+    ></script>
     <script>
       $(".dropify").dropify({
         messages: {
