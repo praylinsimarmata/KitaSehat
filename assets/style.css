@@ -5,7 +5,7 @@ html {
 
 /* -------------------------------------------------------- TEXT */
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;1,800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;1,800&display=swap"); */
 
 * {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -24,7 +24,7 @@ section {
 }
 
 p {
-  font-size: 14px;
+  font-size: 1rem;
   color: #000;
   line-height: 1.5em;
 }
@@ -33,24 +33,29 @@ p {
   color: #999;
 }
 h1 {
-  font-size: 64px;
-  font-weight: 600;
+  font-size: 2.3rem;
+  font-weight: 800;
+  font-family: "Poopins", sans-serif;
 }
 h2 {
-  font-size: 48px;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 700 !important;
+  font-family: "Poopins", sans-serif;
 }
 h3 {
-  font-size: 36px;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 600 !important;
+  font-family: "Poopins", sans-serif;
 }
 h4 {
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 600 !important;
+  font-family: "Poopins", sans-serif;
 }
 h5 {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 600 !important;
+  font-family: "Poopins", sans-serif;
 }
 .fs_12 {
   font-size: 12px;
@@ -67,6 +72,15 @@ h5 {
 .fs_20 {
   font-size: 20px;
 }
+.fw_600 {
+  font-weight: 600;
+}
+.fw_700 {
+  font-weight: 700;
+}
+.fw_800 {
+  font-weight: 800;
+}
 
 .blue {
   color: #0857de;
@@ -80,25 +94,25 @@ h5 {
 
 /* --------------------------------------------------------space */
 .mt_100 {
-  margin-top: 100px;
+  margin-top: 6.25rem;
 }
 .mt_50 {
-  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 .mt_40 {
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 .mt_30 {
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 .mt_20 {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 .mt_10 {
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 .mt_5 {
-  margin-top: 5px;
+  margin-top: 0.3125rem;
 }
 
 .mb_50 {
@@ -209,6 +223,9 @@ h5 {
 .bg_black {
   background-color: var(--black);
 }
+.bg_light {
+  background: #eaf6ff;
+}
 .login input {
   padding: 5px;
   background-color: #f9fbfc;
@@ -234,10 +251,14 @@ h5 {
 
 /*_________________________ NAVBAR */
 header {
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  transition: top 0.3s;
+  transition: top 0.3s; */
   width: 100%;
+}
+.nav_navbarmenu {
+  background-color: #f6f9ff;
+  box-shadow: 0px 4px 4px #eaeaea;
 }
 
 .navbarmenu .logo img {
@@ -250,17 +271,17 @@ header {
 }
 
 .navbarmenu .menuNavigasi .nav-item a {
-  color: #a39d9d;
+  color: rgb(92, 92, 92) k;
+  font-family: "Poopins", sans-serif;
 }
 .navbarmenu .menuNavigasi .nav-item a:hover {
-  color: black;
-
+  color: rgb(0, 0, 0);
   transition: 1s;
 }
 
-main {
+/* main {
   margin-top: 80px;
-}
+} */
 /*---------------------------------------------------------- MEDIA QUERY */
 
 /* large */
@@ -336,8 +357,28 @@ main {
 }
 .btn_red:hover {
   transition: 0.8s;
-  background-color: #ff0000;
+  background-color: #ffffff;
+  color: red;
+  border: 2px solid red;
 }
+.btn_blue {
+  background-color: #0857de;
+  color: white;
+  width: 100%;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 5px 20px;
+  border: none;
+  box-shadow: 5px 4px 4px rgba(8, 87, 222, 0.25);
+}
+
+.btn_blue:hover {
+  font-size: 110%;
+  /* smooth translate */
+  /* transition: 0.8s; */
+}
+
+/*======================================== BERANDA */
 
 .beranda_header .ilustrator {
   background-image: url("../img/ilustrator1.png");
@@ -346,6 +387,9 @@ main {
   height: 90vh;
   background-repeat: no-repeat;
   margin: 0;
+}
+.bg_home {
+  background-image: url("../img/bg_home.png");
 }
 
 footer ul li {
@@ -441,10 +485,24 @@ footer .socmed img {
 }
 
 /* tim developer */
-.box_tim_develop {
+.box_tim_develop,
+.box_tentang {
   box-shadow: 0px 4px 4px rgba(56, 56, 56, 0.35);
   border-radius: 5px;
   background: white;
+}
+.box_populer {
+  box-shadow: 0px 4px 4px rgba(56, 56, 56, 0.35);
+  border-radius: 5px;
+  background: white;
+  padding: 0.5rem !important;
+}
+.box_kebutuhan {
+  box-shadow: 0px 4px 4px rgba(56, 56, 56, 0.35);
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  padding: 0.5rem !important;
+  margin: 0 1rem;
 }
 
 /* modal */
@@ -488,3 +546,22 @@ footer .socmed img {
   color: #a39d9d;
   margin-top: 0.8rem;
 }
+hr {
+  /* sent to back */
+  z-index: -1;
+  /* full width */
+
+  /* color */
+}
+
+/* REKOMENDASI */
+.header_rekomendasi,
+.header_tentang,
+.header_hitungKalori,
+.header_developer {
+  border-left: 5px solid black;
+}
+/* .header_tentang,
+.header_hitungKalori {
+  border-left: 5px solid blue;
+} */
