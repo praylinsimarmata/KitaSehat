@@ -28,17 +28,21 @@ p {
   color: #000;
   line-height: 1.5em;
 }
+a {
+  text-decoration: none !important;
+  color: #000;
+}
 
 .abu {
   color: #999;
 }
 h1 {
-  font-size: 2.3rem;
-  font-weight: 800;
+  font-size: 2.7rem;
+  font-weight: 800 !important;
   font-family: "Poopins", sans-serif;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 2.3rem !important;
   font-weight: 700 !important;
   font-family: "Poopins", sans-serif;
 }
@@ -90,6 +94,9 @@ h5 {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+.container {
+  max-width: 1000px !important;
 }
 
 /* --------------------------------------------------------space */
@@ -262,21 +269,25 @@ header {
 }
 
 .navbarmenu .logo img {
-  height: 40px;
+  height: 2rem;
 }
 .navbarmenu .menuNavigasi {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   color: #a39d9d;
 }
 
 .navbarmenu .menuNavigasi .nav-item a {
-  color: rgb(131, 131, 131);
+  /* color: rgb(131, 131, 131); */
+  color: #999;
   font-family: "Poopins", sans-serif;
 }
 .navbarmenu .menuNavigasi .nav-item a:hover {
-  color: rgb(0, 0, 0);
+  color: white;
+  background-color: blue;
   transition: 1s;
+  border-radius: 0.6rem;
+  /* padding: 0.2rem 0.3rem; */
 }
 
 /* main {
@@ -284,14 +295,18 @@ header {
 } */
 /*---------------------------------------------------------- MEDIA QUERY */
 
+.toggler {
+  width: 1.6rem;
+  height: 100%;
+}
 /* large */
 @media (min-width: 992px) {
   .navbarmenu .menuNavigasi {
     margin-left: 30px;
   }
-  .navbarmenu .menuNavigasi .nav-item {
+  /* .navbarmenu .menuNavigasi .nav-item {
     margin-right: 30px;
-  }
+  } */
   .tentang .tentang_img .gambar {
     padding-top: 90px;
   }
@@ -497,6 +512,7 @@ footer .socmed img {
   box-shadow: 0px 4px 4px rgba(56, 56, 56, 0.35);
   border-radius: 5px;
   background: white;
+  padding: 1.2rem;
 }
 .box_populer {
   box-shadow: 0px 4px 4px rgba(56, 56, 56, 0.35);
@@ -509,7 +525,7 @@ footer .socmed img {
   border-radius: 5px;
   background: rgb(255, 255, 255);
   padding: 0.5rem !important;
-  margin: 0 1rem;
+  /* margin: 0 1rem; */
 }
 
 /* modal */
@@ -566,7 +582,9 @@ hr {
 .header_tentang,
 .header_hitungKalori,
 .header_developer {
-  border-left: 5px solid black;
+  /* border-left: 0.35rem solid black; */
+  /* border-right: 0.35rem solid black; */
+  padding: 0 0.5rem;
 }
 /* .header_tentang,
 .header_hitungKalori {

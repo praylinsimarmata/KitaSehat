@@ -58,80 +58,35 @@
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <i class="bi bi-grid-fill"></i>
+                <img src="img/toggler.png" class="toggler" alt="" />
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="menuNavigasi me-auto navbar-nav mb-2 mb-lg-0">
-                  <!-- beranda -->
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html#beranda">Beranda</a>
-                  </li>
-                  <!-- rekomendasi -->
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html#rekomendasi"
-                      >Rekomendasi</a
-                    >
-                  </li>
-                  <!-- tentang -->
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html#tentang">Tentang</a>
-                  </li>
-                  <!-- developer -->
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html#developer"
-                      >Developer</a
-                    >
-                  </li>
-                </ul>
-              </div>
-
-              <!-- modal profile -->
-              <!-- <div
-                class="modal fade"
-                id="staticBackdrop"
-                data-bs-backdrop="static"
-                data-bs-keyboard="false"
-                tabindex="-1"
-                aria-labelledby="staticBackdropLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog bg-white p-3 modal-lg">
-                  <div class="modal-content box_modal_profile">
-                    <div class="modal-header d-flex justify-content-center">
-                      <h3 class="text-center blue fw-bold">DATA DIRI</h3>
-                    </div>
-                    <div class="modal-body">
-                      <div class="d-flex mt-3">
-                        <div class="pasfoto_profile">
-                          <img src="img/image 32.png" alt="" />
-                        </div>
-                        <div class="input_biodata ms-4 w-100">
-                          <form action="">
-                            <label for="name">Nama</label>
-                            <input type="text" class="w-100 input-group" />
-                            <label for="age">Usia</label>
-                            <input type="number" class="w-100 input-group" />
-                            <label for="job">Pekerjaan</label>
-                            <input type="text" class="w-100 input-group" />
-                            <label for="weight">Berat Badan</label>
-                            <input type="number" class="w-100 input-group" />
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn_red"
-                        data-bs-dismiss="modal"
+                <div class="hidden me-auto"></div>
+                <div class="">
+                  <ul class="menuNavigasi me-auto navbar-nav">
+                    <!-- beranda -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#beranda">Beranda</a>
+                    </li>
+                    <!-- rekomendasi -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#rekomendasi"
+                        >Rekomendasi</a
                       >
-                        Keluar
-                      </button>
-                    </div>
-                  </div>
+                    </li>
+                    <!-- tentang -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#tentang">Tentang</a>
+                    </li>
+                    <!-- developer -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#developer"
+                        >Developer</a
+                      >
+                    </li>
+                  </ul>
                 </div>
-              </div> -->
-              <!-- end modal profile -->
+              </div>
             </div>
           </nav>
         </div>
@@ -144,15 +99,11 @@
       <section>
         <div class="bg_home pb-3" id="beranda">
           <div class="d-flex justify-content-center">
-            <h2 class="header_hitungKalori ps-2">
-              Hitung <span class="text-dark">Kalori</span>
-            </h2>
+            <h1 class="header_hitungKalori">Hitung Kalori</h1>
           </div>
           <p class="text-center">
-            Lorem ipsum dolor sit amet consectetur. Sagittis amet vulputate
-            consectetur malesuada nec urna non. Pulvinar risus scelerisque
-            adipiscing tortor amet id. <br />
-            Urna ultricies et massa enim cursus quis quisque senectus.
+            Tarik dan lepaskan (input gambar) dengan format .jpg atau .png untuk
+            menghitung jumlah kalori dari gambar yang diinputkan
           </p>
           <!-- dropify -->
           <div class="container mt_50">
@@ -210,33 +161,6 @@
       </section>
       <!-- END HITUNG KALORI -->
 
-      <!-- <div class="container-fluid beranda_header" id="beranda">
-        <div class="row g-2">
-          <div class="col-md-6 col-12 d-flex align-items-center">
-            <div class="beranda_lg container w-75">
-              <div class="d-flex justify-content-end">
-                <div class="">
-                  <div class="">
-                    <h2 class="ff_p">Mari</h2>
-                    <img class="w-75" src="img/hidupSehat.png" alt="" />
-                    <p class="mt_20">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Mauris quis
-                      <br />
-                      purus amet, eu fermentum, faucibus. Gravida euismod nulla
-                      sagittis euismod arcu.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-6 d-sm-none d-xl-block d-lg-block d-md-block ilustrator col-12"
-          ></div>
-        </div>
-      </div> -->
-
       <div class="container">
         <hr />
       </div>
@@ -245,120 +169,142 @@
       <section>
         <div class="container" id="rekomendasi">
           <section>
-            <div class="d-flex justify-content-center">
-              <h2 class="mt_40 header_rekomendasi ps-2">Rekomendasi</h2>
+            <div class="slide-right">
+              <div class="d-flex justify-content-center">
+                <h1 class="mt_40 header_rekomendasi">Rekomendasi</h1>
+              </div>
+              <p class="text-center">
+                Berikut adalah beberapa sampel gambar dari berbagai jenis
+                makanan yang teredia. Juga tersedia katogori makanan berdasarkan
+                kebutuhan anda.
+              </p>
             </div>
-            <p class="text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              necessitatibus est magni nihil at dicta dolore perferendis vitae
-              eum sint.
-            </p>
             <!-- POPULER -->
             <section>
               <div class="populer">
-                <h3 class="mt_20">Populer</h3>
+                <h5 class="mt_20 text-center">Populer</h5>
                 <div class="populer_img mt_30">
                   <div class="">
                     <div class="row g-3 gx-2">
                       <div class="box_populer col-lg-2 col-md-4 col-sm-6 col-6">
-                        <div class="d-flex justify-content-center">
-                          <img
-                            class="w-100"
-                            src="img/makanSehat/populer/tumis.png"
-                            alt=""
-                          />
-                        </div>
-                        <p class="mt-2 fs_14">Tumis</p>
+                        <a href="">
+                          <div class="d-flex justify-content-center">
+                            <img
+                              class="w-100"
+                              src="img/makanSehat/populer/tumis.png"
+                              alt=""
+                            />
+                          </div>
+                          <p class="mt-2 fs_14">Tumis</p>
+                        </a>
                       </div>
                       <div class="box_populer col-lg-2 col-md-4 col-sm-6 col-6">
-                        <div class="d-flex justify-content-center">
-                          <img
-                            class="w-100"
-                            src="img/makanSehat/populer/roti.png"
-                            alt=""
-                          />
-                        </div>
-                        <p class="mt-2 fs_14">French Toast</p>
+                        <a href="">
+                          <div class="d-flex justify-content-center">
+                            <img
+                              class="w-100"
+                              src="img/makanSehat/populer/roti.png"
+                              alt=""
+                            />
+                          </div>
+                          <p class="mt-2 fs_14">French Toast</p>
+                        </a>
                       </div>
                       <div class="box_populer col-lg-2 col-md-4 col-sm-6 col-6">
-                        <div class="d-flex justify-content-center">
-                          <img
-                            class="w-100"
-                            src="img/makanSehat/populer/sereal.png"
-                            alt=""
-                          />
-                        </div>
-                        <p class="mt-2 fs_14">Sereal</p>
+                        <a href="">
+                          <div class="d-flex justify-content-center">
+                            <img
+                              class="w-100"
+                              src="img/makanSehat/populer/sereal.png"
+                              alt=""
+                            />
+                          </div>
+                          <p class="mt-2 fs_14">Sereal</p>
+                        </a>
                       </div>
                       <div class="box_populer col-lg-2 col-md-4 col-sm-6 col-6">
-                        <div class="d-flex justify-content-center">
-                          <img
-                            class="w-100"
-                            src="img/makanSehat/populer/sarapan.png"
-                            alt=""
-                          />
-                        </div>
-                        <p class="mt-2 fs_14">Kopi</p>
+                        <a href="">
+                          <div class="d-flex justify-content-center">
+                            <img
+                              class="w-100"
+                              src="img/makanSehat/populer/sarapan.png"
+                              alt=""
+                            />
+                          </div>
+                          <p class="mt-2 fs_14">Kopi</p>
+                        </a>
                       </div>
                       <div class="box_populer col-lg-2 col-md-4 col-sm-6 col-6">
-                        <div class="d-flex justify-content-center">
-                          <img
-                            class="w-100"
-                            src="img/makanSehat/populer/kebab.png"
-                            alt=""
-                          />
-                        </div>
-                        <p class="mt-2 fs_14">Kebab</p>
+                        <a href="">
+                          <div class="d-flex justify-content-center">
+                            <img
+                              class="w-100"
+                              src="img/makanSehat/populer/kebab.png"
+                              alt=""
+                            />
+                          </div>
+                          <p class="mt-2 fs_14">Kebab</p>
+                        </a>
                       </div>
                       <div class="box_populer col-lg-2 col-md-4 col-sm-6 col-6">
-                        <div class="d-flex justify-content-center">
-                          <img
-                            class="w-100"
-                            src="img/makanSehat/populer/sayur_bayam.png"
-                            alt=""
-                          />
-                        </div>
-                        <p class="mt-2 fs_14">Sayur Bayam</p>
+                        <a href="">
+                          <div class="d-flex justify-content-center">
+                            <img
+                              class="w-100"
+                              src="img/makanSehat/populer/sayur_bayam.png"
+                              alt=""
+                            />
+                          </div>
+                          <p class="mt-2 fs_14">Sayur Bayam</p>
+                        </a>
                       </div>
                       <div class="box_populer col-lg-2 col-md-4 col-sm-6 col-6">
-                        <div class="d-flex justify-content-center">
-                          <img
-                            class="w-100"
-                            src="img/makanSehat/populer/nasi_tahu.png"
-                            alt=""
-                          />
-                        </div>
-                        <p class="mt-2 fs_14">Nasi Tahu</p>
+                        <a href="">
+                          <div class="d-flex justify-content-center">
+                            <img
+                              class="w-100"
+                              src="img/makanSehat/populer/nasi_tahu.png"
+                              alt=""
+                            />
+                          </div>
+                          <p class="mt-2 fs_14">Nasi Tahu</p>
+                        </a>
                       </div>
                       <div class="box_populer col-lg-2 col-md-4 col-sm-6 col-6">
-                        <div class="d-flex justify-content-center">
-                          <img
-                            class="w-100"
-                            src="img/makanSehat/populer/makanan_apaansi.png"
-                            alt=""
-                          />
-                        </div>
-                        <p class="mt-2 fs_14">Nasi Rica</p>
+                        <a href="">
+                          <div class="d-flex justify-content-center">
+                            <img
+                              class="w-100"
+                              src="img/makanSehat/populer/makanan_apaansi.png"
+                              alt=""
+                            />
+                          </div>
+                          <p class="mt-2 fs_14">Nasi Rica</p>
+                        </a>
                       </div>
                       <div class="box_populer col-lg-2 col-md-4 col-sm-6 col-6">
-                        <div class="d-flex justify-content-center">
-                          <img
-                            class="w-100"
-                            src="img/makanSehat/populer/sosis.png"
-                            alt=""
-                          />
-                        </div>
-                        <p class="mt-2 fs_14">Sosis Setan</p>
+                        <a href="">
+                          <div class="d-flex justify-content-center">
+                            <img
+                              class="w-100"
+                              src="img/makanSehat/populer/sosis.png"
+                              alt=""
+                            />
+                          </div>
+                          <p class="mt-2 fs_14">Sosis Setan</p>
+                        </a>
                       </div>
                       <div class="box_populer col-lg-2 col-md-4 col-sm-6 col-6">
-                        <div class="d-flex justify-content-center">
-                          <img
-                            class="w-100"
-                            src="img/makanSehat/populer/sayuran.png"
-                            alt=""
-                          />
-                        </div>
-                        <p class="mt-2 fs_14">Sayuran</p>
+                        <a href="">
+                          <div class="d-flex justify-content-center">
+                            <img
+                              class="w-100"
+                              src="img/makanSehat/populer/sayuran.png"
+                              alt=""
+                            />
+                          </div>
+                          <p class="mt-2 fs_14">Sayuran</p>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -369,54 +315,68 @@
           <!-- PILIH KEBUTUHAN -->
           <section>
             <div class="pilih_kebutuhan">
-              <h3 class="mt_20">Pilih Kebutuhan Anda</h3>
+              <h5 class="mt_20 text-center">Pilih Kebutuhan Anda</h5>
               <div class="d-flex justify-content-center mt_40">
-                <div class="d-flex">
-                  <div class="box_kebutuhan">
-                    <div class="d-flex center p-2">
-                      <img class="w-100" src="img/Kebutuhan/vegan.png" alt="" />
-                    </div>
-                    <p class="text-center mt-2 fs_14">Vegetarian</p>
+                <div class="row g-2">
+                  <div class="col-lg-2 col-md-4 col-sm-6 col-6 box_kebutuhan">
+                    <a href="">
+                      <div class="d-flex center p-2">
+                        <img
+                          class="w-100"
+                          src="img/Kebutuhan/vegan.png"
+                          alt=""
+                        />
+                      </div>
+                      <p class="text-center mt-2 fs_14">Vegetarian</p>
+                    </a>
                   </div>
-                  <div class="box_kebutuhan">
-                    <div class="d-flex center">
-                      <img
-                        class="w-100 h-100"
-                        src="img/Kebutuhan/time management.png"
-                        alt=""
-                      />
-                    </div>
-                    <p class="text-center mt-2 fs_14">Diabetes</p>
+                  <div class="col-lg-2 col-md-4 col-sm-6 col-6 box_kebutuhan">
+                    <a href="">
+                      <div class="d-flex center">
+                        <img
+                          class="w-100 h-100"
+                          src="img/Kebutuhan/time management.png"
+                          alt=""
+                        />
+                      </div>
+                      <p class="text-center mt-2 fs_14">Diabetes</p>
+                    </a>
                   </div>
-                  <div class="box_kebutuhan">
-                    <div class="d-flex align-content-center">
-                      <img
-                        class="w-100 h-100"
-                        src="img/Kebutuhan/presentation.png"
-                        alt=""
-                      />
-                    </div>
-                    <p class="text-center mt-2 fs_14">Obesitas</p>
+                  <div class="col-lg-2 col-md-4 col-sm-6 col-6 box_kebutuhan">
+                    <a href="">
+                      <div class="d-flex align-content-center">
+                        <img
+                          class="w-100 h-100"
+                          src="img/Kebutuhan/presentation.png"
+                          alt=""
+                        />
+                      </div>
+                      <p class="text-center mt-2 fs_14">Obesitas</p>
+                    </a>
                   </div>
-                  <div class="box_kebutuhan">
-                    <div class="d-flex center">
-                      <img
-                        class="w-100 h-100"
-                        src="img/Kebutuhan/baby_eating.png"
-                        alt=""
-                      />
-                    </div>
-                    <p class="text-center mt-2 fs_14">Anak dan Balita</p>
+                  <div class="col-lg-2 col-md-4 col-sm-6 col-6 box_kebutuhan">
+                    <a href="">
+                      <div class="d-flex center">
+                        <img
+                          class="w-100 h-100"
+                          src="img/Kebutuhan/baby_eating.png"
+                          alt=""
+                        />
+                      </div>
+                      <p class="text-center mt-2 fs_14">Anak dan Balita</p>
+                    </a>
                   </div>
-                  <div class="box_kebutuhan">
-                    <div class="d-flex align-content-center">
-                      <img
-                        class="w-100 h-100"
-                        src="img/Kebutuhan/mom.png"
-                        alt=""
-                      />
-                    </div>
-                    <p class="text-center mt-2 fs_14">Ibu Menyusui</p>
+                  <div class="col-lg-2 col-md-4 col-sm-6 col-6 box_kebutuhan">
+                    <a href="">
+                      <div class="d-flex align-content-center">
+                        <img
+                          class="w-100 h-100"
+                          src="img/Kebutuhan/mom.png"
+                          alt=""
+                        />
+                      </div>
+                      <p class="text-center mt-2 fs_14">Ibu Menyusui</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -435,9 +395,7 @@
       <section>
         <div class="container tentang mt_50" id="tentang">
           <div class="mt_40 d-flex justify-content-center">
-            <h2 class="ps-2 header_tentang">
-              Tentang Kita<span class="text-dark fw_700">Sehat</span>
-            </h2>
+            <h1 class="header_tentang">Tentang KitaSehat</h1>
           </div>
           <div class="container">
             <p class="text-center">
@@ -455,19 +413,19 @@
             </p>
           </div>
           <div class="tentang_img mt_50">
-            <div class="row">
+            <div class="row g-2">
               <div class="col-lg-3 col-md-6 col-6 mt-md-3 mt-sm-4">
-                <div class="d-flex p-2 center box_tentang">
+                <div class="d-flex center box_tentang">
                   <img class="w-100" src="img/tentang/makanSehat.png" alt="" />
                 </div>
               </div>
               <div class="col-lg-3 col-md-6 col-6 mt-md-3 mt-sm-4">
-                <div class="d-flex p-2 center box_tentang">
+                <div class="d-flex center box_tentang">
                   <img class="w-100" src="img/tentang/olahRaga.png" alt="" />
                 </div>
               </div>
               <div class="col-lg-3 col-md-6 col-6 mt-md-3 mt-sm-4">
-                <div class="d-flex center p-2 box_tentang">
+                <div class="d-flex center box_tentang">
                   <img
                     class="w-100"
                     src="img/tentang/periksaKesehatan.png"
@@ -476,7 +434,7 @@
                 </div>
               </div>
               <div class="col-lg-3 col-md-6 col-6 mt-md-3 mt-sm-4">
-                <div class="d-flex center p-2 box_tentang">
+                <div class="d-flex center box_tentang">
                   <img class="w-100" src="img/tentang/tidurCukup.png" alt="" />
                 </div>
               </div>
@@ -494,15 +452,13 @@
       <section id="developer">
         <div class="container">
           <div class="d-flex justify-content-center">
-            <h2 class="mt_40 header_developer ps-2">
-              Tim <span class="fw_700 text-dark"> Pengembang</span>
-            </h2>
+            <h1 class="mt_40 header_developer">Tim Pengembang</h1>
           </div>
           <p class="text-center">
-            Lorem ipsum dolor sit amet consectetur. Sagittis amet vulputate
-            consectetur malesuada nec urna non. Pulvinar risus scelerisque
-            adipiscing tortor amet id. <br />
-            Urna ultricies et massa enim cursus quis quisque senectus.
+            Developer merupakan mahasiswa yang ikut program Studi Independen
+            Batch 3 Kampus Merdeka X Dicoding dengan <br />
+            path learning “Pengembang Machine Learning dan Front-End Web”.
+            Terbentuk dari beberapa kelas dan memiliki keahlian dibidangnya.
           </p>
         </div>
         <div class="container mt-5">
